@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* nav section styles */
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav >ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.company-name{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #131313;
+}
+    
+ul li{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;;
+}
+/* group styles parts */
+.header{
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.group-info{
+    /* width: 450px;
+   margin-top: 200px; */
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.group-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color:#131313;
+    margin-bottom: 15px;
+}
+.group-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.btn{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    background-color: #FF900E;
+}
+.group-image img{
+    width: 100%;
+}
+/* main section styles */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+.container{
+    width: 1150px;
+    margin-top: 130px;
+    margin-bottom:130px;
+}
+.main-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 76px;
+}
+.list-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.about-title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 25px ;
+}
+.color-1{
+    font-weight: 500;
+    font-size: 35px;
+    color: #727272;;
+}
+.color-2{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 53px;
+    
+    color: #FF900E;
+    
+}
+.about-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+
+}
+/* blog section styles */
+
+.blog-container{
+    display: flex;
+    gap: 96px;
+}
+.blog-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 50%;
+}
+.blog-image-section{
+    width: 50%;
+}
+
+.border{
+    border-left: 5px solid
+    #FF900E;
+
+}
+.features-title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 53px;
+    color: #131313;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+.blog-title{
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+
+}
+.blog-description {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color:  #727272;
+}
+.blogs{
+    padding: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.blog-image-section{
+    position: relative;
+}
+.box{
+    padding:40px 30px;
+    background-color: #FF900E;
+    width: 300px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 0px;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+.experience-big{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.experience-small{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
