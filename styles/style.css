@@ -1,68 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
 }
+
 /* nav section styles */
-.header-container{
+.header-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 0;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav >ul{
+nav>ul {
     display: flex;
     list-style: none;
     gap: 35px;
 }
 
-.company-name{
+.company-name {
     font-weight: 700;
     font-size: 40px;
     line-height: 53px;
     color: #131313;
 }
-    
-ul li{
+
+ul li {
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    color: #424242;;
+    color: #424242;
+    ;
 }
+
 /* group styles parts */
-.header{
+.header {
     background: rgba(255, 144, 14, 0.1);
 }
 
-.group-info{
+.group-info {
     /* width: 450px;
    margin-top: 200px; */
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.group-title{
+
+.group-title {
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
-    color:#131313;
+    color: #131313;
     margin-bottom: 15px;
 }
-.group-description{
+
+.group-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
 }
-.btn{
+
+.btn {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -73,83 +81,97 @@ ul li{
     margin-top: 25px;
     background-color: #FF900E;
 }
-.group-image img{
+
+.group-image img {
     width: 100%;
 }
+
 /* main section styles */
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
 
 }
-.container{
+
+.container {
     width: 1150px;
-    margin-top: 130px;
-    margin-bottom:130px;
+    margin-top: 90px;
+    margin-bottom: 100px;
 }
-.main-list{
+
+.main-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 76px;
 }
-.list-images{
+
+.list-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-.about-title{
+.about-title {
     font-weight: 700;
     font-size: 35px;
     line-height: 53px;
     color: #131313;
-    margin-bottom: 25px ;
+    margin-bottom: 25px;
 }
-.color-1{
-    font-weight: 500;
+
+.color-1 {
     font-size: 35px;
-    color: #727272;;
+    color: #727272;
+
+    ;
 }
-.color-2{
+
+.color-2 {
     font-weight: 700;
     font-size: 35px;
     line-height: 53px;
-    
+
     color: #FF900E;
-    
+
 }
-.about-description{
+
+.about-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
 
 }
+
 /* blog section styles */
 
-.blog-container{
+.blog-container {
     display: flex;
     gap: 96px;
+    width: 100%;
 }
-.blog-section{
+
+.blog-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    width: 50%;
-}
-.blog-image-section{
-    width: 50%;
-}
-
-.border{
-    border-left: 5px solid
-    #FF900E;
 
 }
-.features-title{
+
+.blog-image-section img {
+    width: 708px;
+    height: 982px;
+}
+
+.border {
+    border-left: 5px solid #FF900E;
+
+}
+
+.features-title {
     font-weight: 700;
     font-size: 35px;
     line-height: 53px;
@@ -158,7 +180,8 @@ main{
     margin-bottom: 10px;
 
 }
-.blog-title{
+
+.blog-title {
     margin: 10px 0;
     font-weight: 600;
     font-size: 20px;
@@ -166,23 +189,27 @@ main{
     color: #131313;
 
 }
+
 .blog-description {
 
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color:  #727272;
+    color: #727272;
 }
-.blogs{
+
+.blogs {
     padding: 20px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
 }
-.blog-image-section{
+
+.blog-image-section {
     position: relative;
 }
-.box{
-    padding:40px 30px;
+
+.box {
+    padding: 40px 30px;
     background-color: #FF900E;
     width: 300px;
     border: none;
@@ -191,22 +218,156 @@ main{
     position: absolute;
     margin-top: 0px;
     position: absolute;
-    left: 10px;
-    bottom: 20px;
+    left: 50px;
+    bottom: 100px;
 }
-.experience-big{
+
+.experience-big-font {
     font-weight: 700;
     font-size: 50px;
     line-height: 70px;
     color: #FFFFFF;
 }
-.experience-small{
+
+.experience-small-font {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    
     text-align: center;
-    
     color: #FFFFFF;
 }
+
+/* facts part section */
+.facts {
+    width: 50%;
+}
+
+.fact-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 53px;
+    color: #131313;
+
+}
+
+.fact-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+
+/* design-section */
+
+.design-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.design-box-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.design-box-info{
+    width: 200px;
+    height: 220px;
+    border: 2px solid #FF900E;
+    padding-top: 40px;
+    border-radius: 10px;
+    
+
+}
+.box-info-number{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 53px;
+    text-align: center;
+    margin: 10px 0;
+    color: #424242;
+}
+.box-info-name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+.design-box{
+    transition: all .38s ease-in-out;
+}
+.design-box:hover {
+    /* transform: scale(1.1); */
+    /* transform: translateX(30px) ; */
+     transform: skew(45deg);
+     background-image: linear-gradient(to right, rgb(81, 150, 255) , rgba(255, 255, 101, 0.555)); 
+     color: white;
+     
+}
+/* Our Sponspors section */
+.sponspors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.sponspor{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 53px;
+    color: #131313;
+}
+.sponspor-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin: 10px 0;
+}
+
+ .logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.logo img{
+    margin-left: 60px;
+    filter: grayscale(100%);
+    
+
+}
+
+
+/* footer sections */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container{
+    width: 1150px;
+    text-align: center;
+    padding: 40px 0px;
+    border-radius: 5px;
+    background-color: #ffdfbb;
+    margin-bottom: 100px;
+}
+.copyright{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
+
+
+
+
