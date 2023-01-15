@@ -9,10 +9,11 @@ body {
 }
 
 /* nav section styles */
-.header-container {
+.max-width {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 0;
+    
 }
 
 nav {
@@ -47,12 +48,18 @@ ul li {
     background: rgba(255, 144, 14, 0.1);
 }
 
+.brand-new-group {
+    display: flex;
+    flex-direction: column;
+}
+
 .group-info {
     /* width: 450px;
    margin-top: 200px; */
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .group-title {
@@ -125,7 +132,6 @@ main {
 .color-1 {
     font-size: 35px;
     color: #727272;
-
     ;
 }
 
@@ -258,29 +264,39 @@ main {
     color: #727272;
 }
 
+/* facts section */
+.facts{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
 
 /* design-section */
 
-.design-container{
+.design-container {
     display: flex;
     justify-content: space-between;
     gap: 100px;
 }
-.design-box-info{
+
+.design-box-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.design-box-info{
+
+.design-box-info {
     width: 200px;
     height: 220px;
     border: 2px solid #FF900E;
     padding-top: 40px;
     border-radius: 10px;
-    
+
 
 }
-.box-info-number{
+
+.box-info-number {
     font-weight: 600;
     font-size: 35px;
     line-height: 53px;
@@ -288,26 +304,30 @@ main {
     margin: 10px 0;
     color: #424242;
 }
-.box-info-name{
+
+.box-info-name {
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
     color: #727272;
     margin-bottom: 20px;
 }
-.design-box{
+
+.design-box {
     transition: all .38s ease-in-out;
 }
+
 .design-box:hover {
     /* transform: scale(1.1); */
     /* transform: translateX(30px) ; */
-     transform: skew(45deg);
-     background-image: linear-gradient(to right, rgb(81, 150, 255) , rgba(255, 255, 101, 0.555)); 
-     color: white;
-     
+    transform: skew(45deg);
+    background-image: linear-gradient(to right, rgb(81, 150, 255), rgba(255, 255, 101, 0.555));
+    color: white;
+
 }
+
 /* Our Sponspors section */
-.sponspors{
+.sponspors {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,13 +335,14 @@ main {
     gap: 50px;
 }
 
-.sponspor{
+.sponspor {
     font-weight: 700;
     font-size: 35px;
     line-height: 53px;
     color: #131313;
 }
-.sponspor-description{
+
+.sponspor-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -329,7 +350,7 @@ main {
     margin: 10px 0;
 }
 
- .logo{
+.logo {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -337,22 +358,23 @@ main {
 
 }
 
-.logo img{
+.logo img {
     margin-left: 60px;
     filter: grayscale(100%);
-    
+
 
 }
 
 
 /* footer sections */
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-container{
+
+.footer-container {
     width: 1150px;
     text-align: center;
     padding: 40px 0px;
@@ -360,7 +382,8 @@ footer{
     background-color: #ffdfbb;
     margin-bottom: 100px;
 }
-.copyright{
+
+.copyright {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -368,6 +391,129 @@ footer{
     color: #424242;
 }
 
+.hide {
+    display: none;
+}
+        /* ----------------------------
+                mobile responsive section
+        -----------------------------
+        */
 
+@media only screen and (max-width:576px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        padding-left: 20px;
+    }
 
+    nav>ul {
+        flex-direction: column;
 
+    }
+
+    /* brand-new-group */
+
+    .brand-new-group {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .group-title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+        color: #131313;
+    }
+
+    /*main-list mobile responsive */
+
+    .main-list {
+        flex-direction: column-reverse;
+    }
+
+    .list-images {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+    .list-images img {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .list-about {
+        width: 50%;
+    }
+
+    /* mobile responsive blog-container section */
+    .blog-container {
+        display: block;
+    }
+    .blog-image-section img{
+        width: 100%;
+        padding: 20px;
+        height: 600px;
+    }
+    .blog-section{
+        padding: 20px;
+    }
+    .box{
+    padding: 20px 20px;
+    background-color: #FF900E;
+    width: 150px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 0px;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    }
+    .experience-big-font {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
+        color: #FFFFFF;
+    }
+    
+    .experience-small-font {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    /* facts section */
+    .facts {
+        width: 100%;
+        /* text-align: ; */
+        padding: 20px;
+    }
+    
+    /* Awards Winnings,Project Finished,Clients Worked,Email Send Sections */
+
+    .design-container{
+        flex-direction: column;
+    }
+
+    /* sponspors sections */
+
+    .sponspors{
+        flex-direction: column;
+    }
+    .logo{
+        flex-direction: column;
+        gap: 20px;
+    }
+   
+    .sponspor-text{
+        width: 50%;
+    }
+}
